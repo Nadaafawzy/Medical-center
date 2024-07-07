@@ -1,0 +1,225 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+:root
+{
+    --main:white;
+    --alternative:rgba(0, 81, 255, 0.966);
+    --colored:rgb(9, 3, 100);
+    --gray:gray;
+}
+.btn
+{
+    border: var(--alternative) 5px solid ;
+    background-color: var(--alternative);
+    color: var(--main);
+    padding: 8px 15px;
+    border-radius:5px ;
+}
+.btn:hover
+{
+    border: var(--alternative) 2px solid ;
+    border-radius: 5px;
+    background-color: var( --main);
+    color: var(--alternative);
+    padding: 12px 17px;
+
+}
+ul
+{
+    list-style: none;
+}
+a
+{
+    text-decoration: none;
+    color:black;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+/*start nav section*/
+.navbar
+{
+    height: 10vh;
+    background-color: var(--main);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar ul
+{
+    display: flex;
+    margin: 10px;
+}
+.navbar ul li a
+{
+padding:15px 20px;
+}
+.navbar .Links
+{
+    margin-left: 80px;
+}
+.navbar .Logo
+{
+    display: flex;
+    padding:15px 20px;
+    margin: 90px ;
+}
+.id .btn
+{
+    margin-right: 50px;
+}
+/*Start Home section*/
+.home
+{
+    background-image: url(img/h1_hero.png.webp);
+    background-size: cover;
+    height:70vh ;
+}
+.title
+{
+    color: var(--alternative);
+    text-align: left;
+    text-transform: uppercase;
+display: grid;
+grid-template-columns: repeat(8,1fr);
+/*column-gap:20px;*/
+padding-top: 40px;
+font-size:small;
+padding-left: 20px;
+margin-bottom: 20px;
+}
+.title::before
+{
+    content: " ";
+    height: 2px;
+    display: block;
+    background-color: var(--alternative);
+    width: 80%;
+}
+.home h1, .about h1
+{ display: flex;
+    justify-content: left;
+    margin-left: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left;
+    text-transform: uppercase;
+    color: var(--colored);
+    margin-bottom: 40px;
+}
+.home p ,.about p
+{
+    margin:20px;
+    line-height: 1.5rem;
+    color: var(--gray);
+}
+.home .btn , .about .btn  
+{
+    margin-left: 30px;
+}
+    .primary-btn
+{
+    border: var(--gray) 5px solid ;
+    background-color: var(--gray);
+    color: var(--main);
+    padding: 8px 15px;
+    border-radius:5px ;
+    margin: 20px 30px;
+}
+
+.primary-btn:hover
+{
+    border: var(--alternative) 2px solid ;
+    border-radius: 5px;
+    background-color: var( --main);
+    color: var(--alternative);
+    padding: 12px 17px;
+    margin: 20px 30px;
+
+}
+/*Start about section*/
+.about
+{    position: relative;
+    height: 93vh;
+
+}
+.photos
+{
+    display: flex;
+    margin-right: 30px;
+    position: relative;
+    margin-left: 20px;
+
+}
+.photos .one
+{
+    margin-bottom: 40px;
+    margin-left: -10px;
+    margin-top: -40px;
+
+
+}
+.photos .Two
+{
+    margin-bottom: 40px;
+    margin-left: 15px;
+    position: absolute;
+}
+.photos img
+{
+    width: 350px;
+    height: 70vh;
+}
+.buttons
+{
+    position: absolute;
+    top:23rem;
+}
+/*Start department section*/
+.department
+{
+    height: 50vh;
+    background-color: rgb(244, 250, 252);
+}
+.department h5
+{ 
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    margin:   20px 450px ;
+    font-size: 15px;
+}
+.department h1
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 100px;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+.slices
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slices .secondary-btn
+{margin-left: 20px;
+    background-color: var(--main);
+    color:var(--colored);
+    border:none var(--colored)3px;
+padding:30px;
+}
+span
+{
+    color: var(--alternative);
+    font-weight: bold;
+}
